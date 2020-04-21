@@ -8,11 +8,13 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/colorbox.css">
 
 
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.fullPage.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
 	<script src="js/wow.js"></script>
 
 	<script>
@@ -43,7 +45,8 @@
 							$(".slider1").height(sliderHeight);
 						}
 						sHeight(); $(".sliderWrap").bxSlider({
-							pager: false
+							pager: false,
+                            auto:true
 						});
 					}); $(document).ready(function() {
 
@@ -51,11 +54,30 @@
 						pager: false,
 						auto: true
 					});
+					$(".slider3").bxSlider({
+						pager: false,
+						auto: true
+					});
+                    $(document).ready(function(){
+                        $(".modal").colorbox({
+                           rel:".modal" 
+                        });
+                        $(".dit").colorbox({
+                            iframe:true,
+                            innerWidth:1200,
+                            innerHeight:800
+                            
+                        });
+                    });
 
 				});
 	</script>
-
-
+	
+	<script>
+		new WOW().init();
+	</script>
+	
+	
 
 </head>
 
@@ -106,8 +128,9 @@
 					<div class="csimg">
 						<img src="img/intro_1.png" alt="">
 					</div>
-					<h3>광명동굴</h3>
+					<h4>광명동굴</h4>
 
+					
 				</div>
 
 				<div class="sc3">
@@ -144,6 +167,9 @@
 							</a></li>
 					</ul>
 				</div>
+			</div>
+			<div class="scroll">
+				<a href="#3st"><img src="img/icons-bt1.png" alt=""></a>
 			</div>
 
 		</div>
@@ -200,62 +226,44 @@
 				</ul>
 			</div>
 			<div class="gy">
-				<div class="img">
-					<p style="display: block">
-						<img src="img/main2-slider1.png" alt=""></p>
-					<p><img src="img/main2-slider2.png" alt=""></p>
-					<p><img src="img/main2-slider3.png" alt=""></p>
-					<p><img src="img/main2-slider4.png" alt=""></p>
-					<p><img src="img/main2-slider5.png" alt=""></p>
-					<p><img src="img/main2-slider6.png" alt=""></p>
-					<p><img src="img/main2-slider1.png" alt=""></p>
-					<p><img src="img/main2-slider2.png" alt=""></p>
-					<p><img src="img/main2-slider3.png" alt=""></p>
-					<p><img src="img/main2-slider4.png" alt=""></p>
-					<p><img src="img/main2-slider5.png" alt=""></p>
-					<p><img src="img/main2-slider6.png" alt=""></p>
-					<p><img src="img/main2-slider1.png" alt=""></p>
-					<p><img src="img/main2-slider2.png" alt=""></p>
-					<p><img src="img/main2-slider3.png" alt=""></p>
-					<p><img src="img/main2-slider4.png" alt=""></p>
-					<p><img src="img/main2-slider5.png" alt=""></p>
-					<p><img src="img/main2-slider6.png" alt=""></p>
-				</div>
-				<div class="tb">
-					<div class="left" class="clearfix">
-						<img src="img/icons-left.png" alt="">
-					</div>
-					<div class="ct">
-						<ul class="clearfix">
-							<li class="tb m0">근대역사관</li>
-							<li class="tb">황금동굴</li>
-							<li class="tb">빛의광장</li>
-							<li class="tb">물의세계</li>
-							<li class="tb">지하세계</li>
-							<li class="tb">와인동굴</li>
+				<div class="slider_pg3wrap" id="slider1">
+				<ul class="slider3">
+					<li class="pg4slide_1st">
+						<a href="">
+							<img src="img/main2-slider1.png" alt="">
+						</a>
+					</li>
+					<li class="pg4slide_1st">
+						<a href="">
+							<img src="img/main2-slider2.png" alt="">
+						</a>
+					</li>
+					<li class="pg4slide_1st">
+						<a href="">
+							<img src="img/main2-slider3.png" alt="">
+						</a>
+					</li>
+					<li class="pg4slide_1st">
+						<a href="">
+							<img src="img/main2-slider4.png" alt="">
+						</a>
+					</li>
+					<li class="pg4slide_1st">
+						<a href="">
+							<img src="img/main2-slider5.png" alt="">
+						</a>
+					</li>
+					<li class="pg4slide_1st">
+						<a href="">
+							<img src="img/main2-slider6.png" alt="">
+						</a>
+					</li>
+				</ul>
 
-							<li class="tb m0">근대역사관</li>
-							<li class="tb">황금동굴</li>
-							<li class="tb">빛의광장</li>
-							<li class="tb">물의세계</li>
-							<li class="tb">지하세계</li>
-							<li class="tb">와인동굴</li>
-
-							<li class="tb m0">근대역사관</li>
-							<li class="tb">황금동굴</li>
-							<li class="tb">빛의광장</li>
-							<li class="tb">물의세계</li>
-							<li class="tb">지하세계</li>
-							<li class="tb">와인동굴</li>
-						</ul>
-					</div>
-					<div class="right">
-						<img src="img/icons-right.png" alt="">
-					</div>
-
-				</div>
 			</div>
-
+			</div>
+            
+	        <div class="box"><p class="pgtext">즐거운 동굴 속 여행</p></div>
 
 
 			<div class="scroll">
@@ -297,7 +305,7 @@
 					<li><img src="img/main3-crt1.gif" alt=""></li>
 				</ul>
 			</div>
-			<div class="slider_pg4wrap">
+			<div  id="slider2" class="slider_pg4wrap" >
 				<ul class="slider2">
 					<li class="pg4slide_1st">
 						<a href="">
@@ -345,9 +353,8 @@
 				</ul>
 
 			</div>
-			<div class="pg4-txt">
-				<h3>광명동굴 축제 문화행사!</h3>
-			</div>
+			
+			<div class="box1"><p class="pgtext1">광명동굴 축제 문화행사</p></div>
 			<div class="scroll">
 				<a href="#5st"><img src="img/icons-bt1.png" alt=""></a>
 			</div>
@@ -357,6 +364,7 @@
 
 		<!--page5 main4시작-->
 		<div class="section page" id="page5" data-anchor="5st">
+		
 			<div class="pg5_sc1">
 				<ul>
 					<li><img src="img/main4-leftdrg.png" alt=""></li>
@@ -365,6 +373,16 @@
 
 				</ul>
 			</div>
+			
+			<div class="pg5_bx">
+			    <ul>
+			        <li><img src="img/main4-calik1.png" alt=""></li>
+			        <li><img src="img/main4-calik2.png" alt=""></li>
+			        <li><img src="img/main4-calik3.png" alt=""></li>
+			    </ul>
+			</div>
+			
+			
 			<div class="pg5_sc2">
 				<ul>
 					<li><img src="img/main4-gr.png" alt=""></li>
@@ -375,20 +393,37 @@
 					<li><img src="img/main4-leftimg2.png" alt=""></li>
 				</ul>
 			</div>
+			
 			<div class="pg5_sc3">
-				<img src="img/main4-calik1.png" alt="">
-				<img src="img/main4-calik2.png" alt="">
-				<img src="img/main4-calik3.png" alt="">
+			    <div class="bxs1wrap">
+			            <div class="bxs1"><a href="#">숲속놀이터</a></div>
+			    </div>
+			    <div class="bxs2wrap">
+			            <div class="bxs2"><a href="#">코끼리전차</a></div>
+			    </div>
+			    <div class="bxs3wrap">
+			            <div class="bxs3"><a href="#">LED 미디어타워</a></div>
+			    </div>
+			    <div class="bxs4wrap">
+			            <div class="bxs4"><a href="#">광부의 흔적</a></div>
+			    </div>
+			    
+			    
+			    
 			</div>
-			<div class="pg5_sc4">
-				<ul>
-					<li><a href="img/main4-img3.jpg">LED미디어타워</a></li>
-					<li><a href="img/main4-img1.jpg">숲속놀이터</a></li>
-					<li><a href="img/main4-img2.jpg">코끼리전차</a></li>
-					<li><a href="img/main4-img4.jpg">광부의 흔적</a></li>
-				</ul>
-			</div>
-
+			
+			
+			<div class="box2"><p class="pgtext2">동굴 밖 볼거리</p></div>
+			
+			
+		
+	        
+	  
+        	
+			
+			
+			
+           
 			<div class="scroll">
 				<a href="#6st"><img src="img/icons-bt1.png" alt=""></a>
 			</div>
@@ -399,6 +434,22 @@
 
 		<!--page6 main5시작-->
 		<div class="section page" id="page6" data-anchor="6st">
+		    <div class="pg6-sc1">
+		        <ul>
+		            <li><img src="img/main5-img1.png" alt=""></li>
+		            <li><img src="img/main5-img2.png" alt=""></li>
+		            <li><img src="img/main5-ticket1.gif" alt=""></li>
+		        </ul>
+		    </div>
+		    
+		    <div class="pg6_sc2">
+                <div class="cadwrap">
+                        <a href="img/di.mp4" class="dit"><img class="modal" src="img/main5-img3.jpg" alt="">
+                        </a>
+                        <p>광명동굴 동영상</p>
+		        </div>
+		    </div>
+		
 			<div class="scroll">
 				<a href="#"><img src="img/icons-bt1.png" alt=""></a>
 			</div>
