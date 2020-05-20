@@ -20,17 +20,42 @@
 	<script>
 		$(document).ready(function() {
 					$("#fullpage").fullpage({
-							anchors: ["1st", "2st", "3st", "4st", "5st", "6st"],
+							anchors: ["1st", "2st", "3st", "4st", "5st", "6st","7st"],
 							menu: "#topMenu",
 							navigation: true,
 							slideNavigation: true,
-							afterLoad: function(anchorslink, index) {
+							afterLoad: function(anchorslink, index){
 								console.log(anchorslink + "," + index);
-
-								if (index == 2) {
+                                
+                                if (index == 1) {
 									$("#onView").addClass("move");
 								} else {
 									$("#onView").removeClass("move");
+									}
+
+								if (index == 2) {
+									$("#onView1").addClass("move1");
+								} else {
+									$("#onView1").removeClass("move1");
+									}
+                                
+                                if (index == 3) {
+									$("#onView2").addClass("move2");
+								} else {
+									$("#onView2").removeClass("move2");
+									} 
+                                
+                                if (index == 4) {
+									$("#onView3").addClass("move3");
+								} else {
+									$("#onView3").removeClass("move3");
+									} 
+                                
+                                
+                                if (index == 6) {
+									$("#onView6").addClass("move6");
+								} else {
+									$("#onView6").removeClass("move6");
 									}
 								}
 
@@ -69,13 +94,11 @@
                             
                         });
                     });
+				
 
 				});
 	</script>
 	
-	<script>
-		new WOW().init();
-	</script>
 	
 	
 
@@ -85,11 +108,23 @@
 	<!--메뉴시작-->
 	<nav id="navTop">
 		<ul id="topmenu" class="clearfix">
-			<li data-menuanchor="2st"><a href="#2st">동굴소개</a></li>
-			<li data-menuanchor="3st"><a href="#3st">동굴 속 여행</a></li>
-			<li data-menuanchor="4st"><a href="#4st">문화행사</a></li>
-			<li data-menuanchor="5st"><a href="#5st">동굴 밖 볼거리</a></li>
-			<li data-menuanchor="6st"><a href="#6st">예약예매</a></li>
+			<li data-menuanchor="2st" ><a href="#2st" class="os">동굴소개</a>
+                <div class="bar1"></div>
+			</li>
+			<li data-menuanchor="3st" ><a href="#3st">동굴 속 여행</a>
+			     <div class="bar2"></div>
+			</li>
+			<li data-menuanchor="4st" ><a href="#4st">문화행사</a>
+			     <div class="bar3"></div>
+
+			</li>
+			<li data-menuanchor="5st" ><a href="#5st">동굴 밖 볼거리</a>
+			    <div class="bar4"></div>
+			</li>
+			<li data-menuanchor="6st" ><a href="#6st">예약예매</a>
+						    <div class="bar5"></div>
+
+			</li>
 		</ul>
 	</nav>
 	<!--메뉴끝-->
@@ -103,7 +138,7 @@
 			<div id="intro">
 				<div class="intro-top">
 					<div class="logo">
-						<a href=""><img src="img/logo.png" alt="">
+						<a href="#"><img src="img/logo.png" alt="">
 							<h2>광명동굴</h2>
 						</a>
 					</div>
@@ -135,38 +170,45 @@
 
 				<div class="sc3">
 					<ul class="clearfix">
-						<li><a href=""><img src="img/intro_iconimg01.png" alt=""></a></li>
-						<li><a href=""><img src="img/intro_iconimg02.png" alt=""></a></li>
-						<li><a href=""><img src="img/intro_iconimg03.png" alt=""></a></li>
-						<li><a href=""><img src="img/intro_iconimg04.png" alt=""></a></li>
+						<li><a href="#"><img src="img/intro_iconimg01.png" alt=""></a></li>
+						<li><a href="#"><img src="img/intro_iconimg02.png" alt=""></a></li>
+						<li><a href="#"><img src="img/intro_iconimg03.png" alt=""></a></li>
+						<li><a href="#"><img src="img/intro_iconimg04.png" alt=""></a></li>
 					</ul>
 				</div>
 
 				<div class="sc4">
 					<ul class="clearfix">
-						<li><a href=""><img src="img/intro_snsicon01.png" alt=""></a></li>
-						<li><a href=""><img src="img/intro_snsicon02.png" alt=""></a></li>
-						<li><a href=""><img src="img/intro_snsicon03.png" alt=""></a></li>
-						<li><a href=""><img src="img/intro_snsicon04.png" alt=""></a></li>
+						<li><a href="#"><img src="img/intro_snsicon01.png" alt=""></a></li>
+						<li><a href="#"><img src="img/intro_snsicon02.png" alt=""></a></li>
+						<li><a href="#"><img src="img/intro_snsicon03.png" alt=""></a></li>
+						<li><a href="#"><img src="img/intro_snsicon04.png" alt=""></a></li>
 					</ul>
 					<p> <strong>문의 : 02-2610-2010</strong><br>(광명도시공사 테마파크팀)</p>
 				</div>
-
+				
+				
 				<div class="sc5">
 					<h3><a href="" class="gg">공지사항</a></h3>
 					<a href="" class="ps"><img src="img/intro_plusicon.png" alt=""></a>
 					<ul>
-						<li><a href="">
+						<li><a href="#">
 								● 광명동굴 임시휴장 연장안내
 							</a></li>
-						<li><a href="">
+						<li><a href="#">
 								● 광명동굴 공휴일 운영안내
 							</a></li>
-						<li><a href="">
+						<li><a href="#">
 								● 광명동굴 겨율대축제
 							</a></li>
 					</ul>
 				</div>
+				
+				<div class="main" id="onView">
+				<h3>도심 속 동굴파크! "광명동굴" 방문을 환영합니다.</h3>
+				
+			</div>
+ 
 			</div>
 			<div class="scroll">
 				<a href="#3st"><img src="img/icons-bt1.png" alt=""></a>
@@ -193,13 +235,26 @@
 					<li><img src="img/main1-dg5.png" alt=""></li>
 				</ul>
 			</div>
-			<div class="main" id="onView">
+			<div class="main1" id="onView1">
 				<h3>폐광의 기적! "광명동굴"</h3>
 				<p>광산 시작년도 : 1912년<br>광산 폐광년도 : 1972년<br>
 					채광물질 : 금,은,동,아연 등<br>갱도길이 : 7.8Km(개방 2km)<br>
 					갱도층수 : 0레벨 ~ 지하7레벨(총8레벨)<br>총 깊 이 : 275</p>
-				<a href="#">보러가기</a>
+					<ul class="clearfix">
+					    <li><a href="#" class="smenu1">동굴스토리</a></li>
+					    <li><a href="#" class="smenu2">공지사항</a></li>
+					    <li><a href="#" class="smenu3">관람안내</a></li>
+					    <li><a href="#" class="smenu4">찾아오시는 길</a></li>
+					</ul>
+				
+				
+				
+				
+
+
 			</div>
+
+            
 			<div class="scroll">
 				<a href="#3st"><img src="img/icons-bt1.png" alt=""></a>
 			</div>
@@ -265,6 +320,25 @@
             
 	        <div class="box"><p class="pgtext">즐거운 동굴 속 여행</p></div>
 
+            <div class="main2" id="onView2">
+					<ul class="clearfix">
+					    <li><a href="#" class="smenu1">근대역사관</a></li>
+					    <li><a href="#" class="smenu2">황금동굴</a></li>
+					    <li><a href="#" class="smenu3">빛의광장</a></li>
+					    <li><a href="#" class="smenu4">물의세계</a></li>
+					    <li><a href="#" class="smenu4">지하세계</a></li>
+					    <li><a href="#" class="smenu4">와인동굴</a></li>
+					    
+					    
+					    
+					</ul>
+				
+				
+				
+				
+
+
+			</div>
 
 			<div class="scroll">
 				<a href="#4st"><img src="img/icons-bt1.png" alt=""></a>
@@ -355,6 +429,27 @@
 			</div>
 			
 			<div class="box1"><p class="pgtext1">광명동굴 축제 문화행사</p></div>
+			<div class="main3" id="onView3">
+					<ul class="clearfix">
+					    <li><a href="#" class="smenu1">미디어샤파이쇼</a></li>
+					    <li><a href="#" class="smenu2">와인클래스</a></li>
+					    <li><a href="#" class="smenu3">공포체험관</a></li>
+					    <li><a href="#" class="smenu4">타임캐슬관</a></li>
+					    <li><a href="#" class="smenu4">레인보우</a></li>
+					    
+					    
+					    
+					</ul>
+				
+				
+				
+				
+
+
+			</div>
+
+			
+			
 			<div class="scroll">
 				<a href="#5st"><img src="img/icons-bt1.png" alt=""></a>
 			</div>
@@ -445,20 +540,97 @@
 		    <div class="pg6_sc2">
                 <div class="cadwrap">
                         <a href="img/di.mp4" class="dit"><img class="modal" src="img/main5-img3.jpg" alt="">
+                        <a href="img/di.mp4" class="dit"><img class="modal" src="img/main5-img3.jpg" alt="">
                         </a>
                         <p>광명동굴 동영상</p>
 		        </div>
 		    </div>
+		    
+		    <div class="pg6_sc3">
+		        <div class="iconswrap">
+		            <div class="icons">
+		                <a href="#" class="txt1"><img src="img/main5-icons1-1.png" alt=""></a>
+		                <div class="icontxt">
+		                    <a href="#">관람안내</a>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="iconswrap2">
+		            <div class="icons1">
+		                <a href="#" class="txt2"><img src="img/main5-icons1-2.png" alt=""></a>
+		                <div class="icontxt1">
+		                    <a href="#">예약/예매</a>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="iconswrap3">
+		            <div class="icons2">
+		                <a href="#" class="txt3"><img src="img/main5-icons1-3.png" alt=""></a>
+		                <div class="icontxt2">
+		                    <a href="#">취소/환불</a>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="iconswrap4">
+		            <div class="icons3">
+		                <a href="#" class="txt4"><img src="img/main5-icons1-4.png" alt=""></a>
+		                <div class="icontxt3">
+		                    <a href="#">찾아오시는 길</a>
+		                </div>
+		            </div>
+		        </div>
+		        
+		        
+		        
+		        
+		        
+		        
+		    </div>
+		    
+		    <div class="main6" id="onView6">
+				<h3>도심 속 동굴파크!<br>"광명동굴" 매력에 푹 빠져봐~</h3>
+				
+			</div>
+
+            
+		    
+		    
 		
 			<div class="scroll">
-				<a href="#"><img src="img/icons-bt1.png" alt=""></a>
+				<a href="#1st"><img src="img/icons-bt2.png" alt=""></a>
 			</div>
 		</div>
 		<!--page6 main5끝-->
 
 		<!--page7 footer시작-->
 
-		<div class="section page fp-auto-height" id="page7" data-anchor="7st"></div>
+		<div class="section page fp-auto-height" id="page7" data-anchor="7st">
+		    <div class="footer">
+		    	<div class="ft-st">
+		    		<div class="ft-icons">
+		    			<ul class="clearfix">
+		    				<li><a href="#"><img src="img/footericons-2.png" alt=""></a></li>
+		    				<li><a href="#"><img src="img/footericons-4.png" alt=""></a></li>
+		    				<li><a href="#"><img src="img/footericons-3.png" alt=""></a></li>
+		    				<li><a href="#"><img src="img/footericons-1.png" alt=""></a></li>
+		    			</ul>
+		    		</div>
+		    		<div class="ft-logo">
+		    			<ul>
+		    				<li><a href="#"><img src="img/logo.png" alt=""></a></li>
+		    				<li><a href="#"><img src="img/footerlogo-txt.png" alt=""></a></li>
+		    			</ul>
+		    		</div>
+		    		<div class="ft-txts">
+		    			<p>우)14234/경기도 광명시 가학로85번길 142<br>
+		    			상호명:광명시청/ 대표자명:박승원/ 사업자번호:133-83-00244<br>
+		    			COPYRIGHTⓒ2020.GWANGMYENONG CITY ALL RIGHTS RESERVED</p>
+		    			
+		    		</div>
+		    		
+		    	</div>
+		    </div>
+		</div>
 		<!--page7 footer끝-->
 
 

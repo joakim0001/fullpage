@@ -184,6 +184,7 @@ html.fp-enabled,
     height: 10px;
     margin: -5px 0px 0px -5px;
 }
+#fp-nav ul li:hover .bar{display: block}
 #fp-nav ul li .fp-tooltip {
     position: absolute;
     top: -2px;
